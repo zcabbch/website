@@ -16,7 +16,7 @@
 </style>
 </head>
 <body>
-<h1>Search here!</h1>
+<h1>Search!</h1>
 <p>Fill in your name, then click <strong>Submit</strong> to search.</p>
 <form method="post" action="search.php" enctype="multipart/form-data" >
       Name  <input type="text" name="name" id="name"/></br>
