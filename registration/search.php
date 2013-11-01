@@ -52,9 +52,9 @@
     echo "<h3>No found!</h3>";
     }
     // Retrieve data
-    $sql_select = "SELECT * FROM registration_tbl WHERE name LIKE concat ('%',?,'%')";
+    $sql_select = "SELECT * FROM registration_tbl WHERE name LIKE concat('%',?,'%')";
     $stmt = $conn->prepare($sql_select);
-    $stmt->bindvalue(1, $name);
+    $stmt->bindValue(1, $name);
     $stmt->execute;
     $registrants = $stmt->fetchAll(); 
     if(count($registrants) > 0) {
